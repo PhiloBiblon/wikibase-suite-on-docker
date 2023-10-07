@@ -24,7 +24,8 @@ All the services are accessed through a single URL through the https protocol co
    * Replace at least the following parameters in .env file.
       * `SITENAME`. Sitename for your site.
       * `VIRTUAL_HOST`. Your server dns name.
-      * `LETSENCRYPT_EMAIL`. An email to use with LetsEncrypt
+      * `LETSENCRYPT_EMAIL`. An email to use with LetsEncrypt.
+      * `MW_ADMIN_EMAIL`. The Wikibase admin email.
       * `MW_ADMIN_PASS`. Wikibase password.
       * `MW_SECRET_KEY`.
       * `DB_PASS`. Internal database password.
@@ -45,7 +46,7 @@ docker compose up -d
 
 ## Access to the services
 
-* Wikibase: `https://${VIRTUAL_HOST}/query/`
+* Wikibase: `https://${VIRTUAL_HOST}/wiki/`
 * Query service: `https://${VIRTUAL_HOST}/query/`
 * Quickstatements: `https://${VIRTUAL_HOST}/qs/`
 * Reconcile service: `https://${VIRTUAL_HOST}/reconcile/`
