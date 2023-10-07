@@ -21,20 +21,20 @@ All the services are accessed through a single URL through the https protocol co
 1. Move to the `services` folder.
 
 2. Configure parameters. 
-  1. Replace at least the following parameters in .env file.
-     * `SITENAME`. Sitename for your site.
-     * `VIRTUAL_HOST`. Your server dns name.
-     * `LETSENCRYPT_EMAIL`. An email to use with LetsEncrypt
-     * `MW_ADMIN_PASS`. Wikibase password.
-     * `MW_SECRET_KEY`.
-     * `DB_PASS`. Internal database password.
-  2. Apply custom parameters.
-```
-. .env
-envsubst '$SITENAME,$VIRTUAL_HOST' < wiki/LocalSettings.php.template > wiki/LocalSettings.php
-envsubst '$SITENAME,$VIRTUAL_HOST' < wiki/pages/MediaWiki\:SideBar.template > wiki/pages/MediaWiki\:SideBar
-envsubst '$SITENAME,$VIRTUAL_HOST' < reconcile/config.py.template > reconcile/config.py
-```
+   * Replace at least the following parameters in .env file.
+      * `SITENAME`. Sitename for your site.
+      * `VIRTUAL_HOST`. Your server dns name.
+      * `LETSENCRYPT_EMAIL`. An email to use with LetsEncrypt
+      * `MW_ADMIN_PASS`. Wikibase password.
+      * `MW_SECRET_KEY`.
+      * `DB_PASS`. Internal database password.
+   * Apply custom parameters.
+      ```
+      . .env
+      envsubst '$SITENAME,$VIRTUAL_HOST' < wiki/LocalSettings.php.template > wiki/LocalSettings.php
+      envsubst '$SITENAME,$VIRTUAL_HOST' < wiki/pages/MediaWiki\:SideBar.template > wiki/pages/MediaWiki\:SideBar
+      envsubst '$SITENAME,$VIRTUAL_HOST' < reconcile/config.py.template > reconcile/config.py
+      ```
  
 3. Replace your logo. Replace the `wiki/wiki.png` image for your own logo.
 
