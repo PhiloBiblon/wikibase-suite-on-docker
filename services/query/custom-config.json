@@ -1,0 +1,25 @@
+{
+    "api": {
+      "sparql": {
+        "uri": "/query/bigdata/namespace/wdq/sparql"
+      },
+      "wikibase": {
+        "uri": "/w/api.php"
+      },
+      "examples": {
+        "server": "https://www.wikidata.org/",
+        "endpoint": "api/rest_v1/page/html/",
+        "pageTitle": "Wikidata:SPARQL_query_service/queries/examples",
+        "pagePathElement": "wiki/"
+      },
+      "urlShortener": "tinyurl"
+    },
+    "brand": {
+      "title": "DockerWikibaseQueryService",
+      "logo": "logo.svg",
+      "favicon": "favicon.ico",
+      "copyrightUrl": "undefined",
+      "index": "./index.html"
+    }
+  }
+  

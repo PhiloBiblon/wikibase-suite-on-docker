@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+  reconcile:
+    image: "${RECONCILE_IMAGE_NAME}"
+    volumes:
+      - type: bind
+        source: ./reconcile/config.py
+        target: /openrefine-wikibase/config.py
+        read_only: true
+      - type: bind
+        source: ./wiki/pb_logo.png
+        target: /openrefine-wikibase/static/pb_logo.png
+        read_only: true
+    environment:
+      VIRTUAL_HOST: ${VIRTUAL_HOST}
+      VIRTUAL_PORT: 8000
+      VIRTUAL_PATH: /reconcile/
+      VIRTUAL_DEST: /
+  redis:
+    image: "redis:alpine"
+    expose:
+      - "6379" 

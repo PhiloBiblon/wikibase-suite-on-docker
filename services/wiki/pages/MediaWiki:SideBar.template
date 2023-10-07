@@ -1,0 +1,15 @@
+
+* navigation
+** mainpage|mainpage-description
+** recentchanges-url|recentchanges
+** randompage-url|randompage
+** helppage|help-mediawiki
+* Services
+** https://${VIRTUAL_HOST}/query/|Query service
+** https://${VIRTUAL_HOST}/qs/|Quickstatements
+** https://${VIRTUAL_HOST}/reconcile/|Reconcile service
+** https://${VIRTUAL_HOST}/openrefine/|OpenRefine
+** https://${VIRTUAL_HOST}/openrefine-data/|OpenRefine (files)
+* SEARCH
+* TOOLBOX
+* LANGUAGES

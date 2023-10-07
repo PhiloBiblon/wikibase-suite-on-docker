@@ -1,0 +1,9 @@
+version: '3.4'
+
+include:
+  - docker-compose.proxy.yml
+  - docker-compose.base.yml
+  - docker-compose.extra.yml
+  - docker-compose.reconcile.yml
+  - docker-compose.openrefine.yml
+
