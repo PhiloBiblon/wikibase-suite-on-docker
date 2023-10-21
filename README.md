@@ -29,6 +29,8 @@ All the services are accessed through a single URL through the https protocol co
       * `MW_ADMIN_PASS`. Wikibase password.
       * `MW_SECRET_KEY`.
       * `DB_PASS`. Internal database password.
+      * `DB_ROOT_PASS`. The `root` user database password.
+
    * Apply custom parameters.
       ```
       . .env

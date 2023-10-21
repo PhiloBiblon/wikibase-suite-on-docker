@@ -78,7 +78,7 @@ services:
       MYSQL_DATABASE: ${DB_NAME}
       MYSQL_USER: ${DB_USER}
       MYSQL_PASSWORD: ${DB_PASS}
-      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASS}
     networks:
       default:
         aliases:
