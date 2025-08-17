@@ -1,3 +1,7 @@
+> ⚠️  This repository is  **deprecated**.
+> Use this instead 👉 [wmde/wikibase-release-pipeline](https://github.com/wmde/wikibase-release-pipeline)
+
+
 # Wikibase suite on docker
 
 A collection of Wikibase services installed via Docker Compose V2:
